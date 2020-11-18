@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+a, a:active, a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  border: solid 1px #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  padding: 10px 15px;
+  font-size: 12px;
+  border: solid 1px #000;
+  text-align: left;
+}
+
+table td a {
+  text-decoration: none;
+  color: #222;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page .content {
+  display: flex;
+  align-items: center;
+}
+
+.page.view, .page.admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.page .content h1 {
+  margin: 1em 0.5em;
 }
